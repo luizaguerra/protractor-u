@@ -14,4 +14,12 @@ describe('Protractor Demo App', function() {
     expect(browser.getTitle()).toEqual('AngularJS: API: ngBind');
   });
 
+  it('Devo realizar uma busca na homepage', function(){
+    searchField = element(by.name('as_q'));
+    searchField.sendKeys('textarea');
+
+    val = element(by.linkText('textarea'));
+    val.click();
+    expect(browser.getTitle()).toEqual('AngularJS: API: textarea');
+  });
 });
