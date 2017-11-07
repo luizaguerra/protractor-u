@@ -16,7 +16,7 @@ describe('Protractor Demo App', function() {
     expect(browser.getTitle()).toEqual(apiPage.title);
   });
 
-  it('Deve acessar a diretiva ngBind', function(){
+  it('Deve acessar a diretivat ngBind', function(){
     apiPage.dirNgBind.click();
     expect(browser.getTitle()).toEqual(ngBindPage.title);
   });
